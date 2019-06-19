@@ -1,0 +1,10 @@
+[user]
+	name = Soni Singh
+	email = soni.singh@pyramidconsultinginc.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[remote "origin"]
+	prune = true
